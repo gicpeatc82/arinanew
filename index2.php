@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,500,600,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <script src="js/web3.js"></script>
     <script src="js/jquery-3.2.1.slim.min.js"></script>
@@ -31,231 +33,121 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/TextPlugin.min.js"></script>
     <script src="js/main.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" href="css/demo.css">
-    <link rel="stylesheet" href="dist/css/ckin.css">
 </head>
 
 
 
 <body>
-
-
-
-
-
-<div class="main-outer text-center">
-
-    <!-- Homepage Banner -->
-
-    <div class="introduction-banner">
-
-        <div class="header sticky-header">
-
-            <div class="align-center header-inner">
-
-                <div class="container clearfix">
-
-                    <div class="logo">
-
-                        <a href="index.html">
-
-                            <h1 style="font-family: 'prometheus', 'Open Sans', sans-serif  ;font-weight: 400;">ARINA YAKYUKEN</h1>
-
-                        </a>
-
-                    </div>
-
-
-
-                    <div class="navigation">
-
-                        <ul>
-
-                            <li>
-
-							<li><a href="#" class="button">How ot play</a></li>
-
-							<li><a href="check_Table.php" class="button">Table</a></li>
-
-							<li><a href="https://etherscan.io/address/0xcCdA5213d453388fB5fB43054BC261c8636b1e51#code" class="button">Smart Contract</a></li>
-
-							<li><a href="#" class="button">Others</a></li>
-
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-					
-
-<section class="demo-section demo-section--light" id="demo">
-
-	<div class="container">
-
-		<video poster="arina_start.jpg" src="arina_start.mp4" data-ckin="default" data-overlay="1" data-title=""></video>
-
-	</div>
-
-</section>
-
-                </div>
-
+<!------header-------------------->
+    <header id="header">
+        <div id="navber">
+            <div id="logo">
+                <img src="images/ARINAUNIVERSELOGO.png" alt="logo">
             </div>
 
-        </div>
+            <div class="nav">
+                <select id="language" class="selectpicker form-control form-control-sm" data-width="auto" data-style="btn-primary" name="language" onchange="changelang()">
+                    <option value="en">ENG</option>
+                    <option value="zh_TW">TW</option>
+                    <option value="zh_CN">CN</option>
+                </select> 
+            </div>
 
-    </div>
+            <div class="nav">
+                <span class="social">
+                    <a href="https://www.facebook.com/GlobalIdolCoin/"><img src="images/icon/Facebook.png" alt=""></a>
+                    <a href="https://twitter.com/GIC48226830"><img src="images/icon/Twitter.png" alt=""></a>
+                    <a href="https://www.instagram.com/taiwan_gic/"><img src="images/icon/Instagram.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCm5YE9imTe4LVGOJrSpoJ2g/featured?view_as=subscriber"><img src="images/icon/Youtube.png" alt=""></a>
+                </span>
+            </div>
+
+            <div class="nav" id="nav-link">
+                <ul>
+                    <li><a href="#top" >HOME</a></li>
+                    <li><a href="" >HOW TO PLAY</a></li>
+                    <li><a href="" >TABLE</a></li>
+                    <li><a href="" >SMART CONTRACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+<div class="main-outer text-center">
+    <!-- Homepage Banner -->
+    
 
 
 
 
 
     <div id="token-info" class="arina-features-main trading-crypto-main">
-
         <div class="container">
-
 			<h2 class="title-h2">一決勝負吧！！</h2>
 
         	<br>
 
 			<h4>使出你的絕招！</h4>
 
-
-
 			<div class="cta-group">
-
 				<button type="button" class="cta" id="scissors">出剪刀</button>
-
 				<button type="button" class="cta" id="stone">出石頭</button>
-
 				<button type="button" class="cta" id="paper">出布</button>
-
 			</div>
-
 		</div>
-
 	</div>
 
-
-
     <div id="token-info" class="arina-features-main trading-crypto-main">
-
         <div class="container">
-
             <div class="block2">
-
                 <h2 class="" id="amount_token">載入中,請稍等...</h2>
-
             </div>
-
             <div class="block2">
-
                 <h2 class="" id="amount_ETH"></h2>
-
             </div>
-
 		</div>
-
 	</div>
 
-
-
-
-
     <div id="token-info" class="arina-features-main trading-crypto-main">
-
         <div class="container">
-
             <div class="block2">
-
                 <h2>目前地址:</h2><center><h3 class="show" id="address"></h3></center>
-
             </div>
 
-
-
             <div class="block2">
-
                 <h2>剩餘冷卻時間(秒):</h2><center><h3 class="show" id="readyTime"></h3></center>
-
             </div>
 
 
-
             <div class="block2">
-
                 <h2>上次猜拳紀錄:</h2><center><h3 class="show" id="record0"></h3></center>
-
             </div>
 
-
-
             <div class="block2">
-
                 <h2>上次開獎紀錄:</h2><center><h3 class="show" id="lottery0"></h3></center>
-
             </div>
-
-
-
-
-
 		</div>
-
 	</div>
 
 
 
     <div id="token-info" class="arina-features-main trading-crypto-main">
-
         <div class="container">
-
             <div class="block2">
-
                 <h2>猜拳歷史紀錄(顯示先前5筆,不包含該次):</h2><center><h3 class="show2" id="record"></h3></center>
-
             </div>
-
 		</div>
-
 	</div>
 
 
 
     <div id="token-info" class="arina-features-main trading-crypto-main">
-
         <div class="container">
-
             <div class="block2">
-
                 <h2>開獎歷史紀錄(顯示先前5筆,不包含該次):</h2><center><h3 class="show2" id="lottery"></h3></center>
-
             </div>
-
 		</div>
-
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <div class="social-section">
 
@@ -351,15 +243,24 @@
 
 
 
-  <script type="text/javascript">
+<script type="text/javascript">
+    $(function(){
+        $(window).scroll(function () {
+            var scrollVal = $(this).scrollTop();
+            
+            if (scrollVal > 0) {
+                $('#navber').addClass('navber');
+            } else {
+                $('#navber').removeClass('navber');
+            }
+        });
+    });
 
 
 
 
 
-
-
-  </script>
+</script>
 
 
 
