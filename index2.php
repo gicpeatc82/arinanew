@@ -150,16 +150,66 @@
                 <div class="col-sm-6 list">
                     <img src="images/WINNINGBET.png" alt="">
                 </div>
-                <div class="col-sm-3 model">
-                    <img src="images/ARINA04_3.png" alt="">
+                <div class="col-sm-3 model" id="model2">
+                    <img src="images/ARINA04_2.png" alt="">
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
+        <div id="footer">
+            <img id="ShapeBG" src="images/ShapeBG.png" alt="">
 
+            <div class="footer-content">
+                <div id="dapp-listing" class="container">
+                    <h3 data-i18n-text="dappListing"></h3>
+                    <div class="small-dapp">
+                        <img src="images/8DAPPLISTING/dapp_logo.png" alt="">
+                    </div>
+                    <div class="small-dapp">
+                        <img src="images/8DAPPLISTING/dappreview.png" alt="">
+                    </div>
+                    <div class="big-dapp">
+                        <img src="images/8DAPPLISTING/dapp_online.png" alt="">
+                    </div>
+                    <div class="big-dapp">
+                        <img src="images/8DAPPLISTING/dapptotal.png" alt="">
+                    </div>
+                </div>
+
+                <div id="bottom">
+                    <div class="copyright">
+                    
+                        <p>Copyright&copy; 2018.GIC-COIN All Rights Reserved.</p>
+                        <div></div>
+                    </div>
+
+                    <div class="footer ARINAUNIVERSELOGO">
+                    <img src="images/ARINAUNIVERSELOGO.png" alt="">
+                    </div>
+
+                    <div class="footer icon">
+                        <ul class="nav">
+                            <li>
+                                <a href="https://www.facebook.com/GlobalIdolCoin/"><img src="images/icon/Facebook.png" alt=""></a>
+                                <a href="https://twitter.com/GIC48226830"><img src="images/icon/Twitter.png" alt=""></a>
+                                <a href="https://www.instagram.com/taiwan_gic/"><img src="images/icon/Instagram.png" alt=""></a>
+                                <a href="https://www.youtube.com/channel/UCm5YE9imTe4LVGOJrSpoJ2g/featured?view_as=subscriber"><img src="images/icon/Youtube.png" alt=""></a>
+                            </li>
+                        </ul>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
     </footer>
+
+
+
+
+
 
 <div class="main-outer text-center">
 
