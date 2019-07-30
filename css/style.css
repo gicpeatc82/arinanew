@@ -9,8 +9,8 @@ body {
     margin: 0px;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #333;
-    background-color: #fff;
+    color: #fff;
+    background-color: #333;
     font-family: 'Montserrat', sans-serif,'Microsoft JhengHei';
 }
 
@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0px;
     padding: 0px;
     line-height: 30px;
+    color: #fff;
 }
 
 ul, ol {
@@ -43,7 +44,7 @@ img {
 }
 
 .container {
-    width: 85%;
+    width: 95%;
     max-width: 1170px;
     margin: 0 auto;
     position: relative;
@@ -97,7 +98,7 @@ header {
 }
 #logo {
     float: left;
-    padding:10px 60px;
+    padding:10px 0 10px 60px;
 }
 
 #logo img{
@@ -146,59 +147,69 @@ header {
     border-radius: 25px;
 }
 
-#dapp-selection{
-    position: relative;
-    display: inline-block;
-    font: 2em/1em ;
-    cursor: pointer;
-    user-select: none;
-    height: 2.1em;
-}
-#dapp-selection:after{
-    content:"";
-    border-top-color: #ccc;
-    position: absolute;
-}
-#dapp-selection:hover + .list-unstyled{
-    display: block;
-}
-.list-unstyled{
-    text-align: center;
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 290px;
-}
-.list-unstyled:hover{
-    display: block;
-}
-.list-unstyled li{
-    background-color: #ac47db;
-    padding:2px 5px;
-    margin:5px 0 ;
-    border: 1px solid #ddd;
-    border-radius: 25px;
-}
-.list-unstyled li a{
-    color: #fff;
-    font-size: 1.5em;
-}
-
-
-#info-context p{
-    font-variant: small-caps;
-}
-
 #header-left{
     margin-top: 220px;
 }
-#header-left h5{
-    color:#7a41d8;
-    float:right;
-    background-color: #fff;
-    border-radius: 25px;
-    padding:5px 20px;
-    font-weight:bold;
+#header-video{
+    height:50%;
+}
+
+/*====================03.game============*/
+
+#game{
+    height: 700px;
+    background-color: #222;
+    color:#fff;
     text-align: center;
 }
+.game-left div{
+    margin-top:50px;
+}
+.game-img img{
+    width:100%;
+    height:100%;
+    z-index:3;
+}
+.win-and-get div{
+    margin: 30px 0;
+}
+.win-and-get span{
+    margin:0 5px;
+}
+.win-and-get img{
+    display: inline-block;
+    width:20%;
+    margin-top:-15px;
+}
+.win-number{
+    padding:20% 0;
+}
+.win-number p{
+    display:inline-block;
+    font-size: 2em;
+}
+
+.play-history p, .prize-history p{
+    font-size: 0.7em;
+}
+
+/*====================04.list============*/
+#list{
+    height: 700px;
+    background-color: #222;
+    padding:20px 0;
+}
+#list .container{
+    max-width: 1240px; 
+}
+.model img{
+    height: 900px;
+    width: auto;
+}
+
+.list img{
+    width:110%;
+    z-index:5;
+}
+/*====================05.footer============*/
 
