@@ -148,12 +148,43 @@ header {
 }
 
 #header-left{
-    margin-top: 220px;
+    margin-top: 8%;
 }
 #header-video{
-    height:50%;
+    /* height:50%; */
 }
 
+.video-container {
+    margin-left:22%;
+    width:90%;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;left: 0;
+    width: 95%;
+    height: 95%;
+}
+
+#header-img{
+    position: absolute;
+    left: 22%;
+    top: 80%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+}
+
+#header-content{
+    position: absolute;
+    left: 45%;
+    top: 100%;
+    font-size: 0.7em;
+    line-height: 22px;
+}
 /*====================03.game============*/
 
 #game{

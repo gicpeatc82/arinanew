@@ -73,9 +73,12 @@
 
         <div class="row">
             <div id="header-left" class="col-sm-7">
-                <div id="header-video"></div>
-                <div id="header-img"></div>
-                <div id="header-content"></div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/W1S7vUCfaEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <img id="header-img" src="images/ARINAYAKYUKENLOGO.png" alt="">
+                <p id="header-content">樂透號碼中獎時最高可獲得20ETH樂透號碼中獎時最高可獲得20ETH樂透號碼中獎時最高可獲得20ETH樂透號碼中獎時最高可獲得20ETH樂透號碼中獎時最高可獲得20ETH</p>
             </div>
             <div class="col-sm-5">
 
