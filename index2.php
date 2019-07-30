@@ -91,8 +91,8 @@
             <div class="row">
                 <div class="col-sm-4 game-left">
                     <div class="play-a-game">
-                        <h5>一決勝負吧！！</h5>
-                        <p>使出你的絕招！</p>
+                        <h5 data-i18n-text="playAGameH5"></h5>
+                        <p data-i18n-text="playAGameP"></p>
                         <div class="cta-group">
                             <button type="button" class="cta" id="scissors">
                                 <img src="images/Scissors.png" alt="">
@@ -109,12 +109,12 @@
                     </div>
 
                     <div class="win-something">
-                        <p>贏得:</p>
+                        <p data-i18n-text="winSomething"></p>
 
                     </div>
 
                     <div class="win-code">
-                        <p>樂透號碼中獎時最高可獲得20ETH</p>
+                        <p data-i18n-text="winCode"></p>
                     </div>
                 </div>
 
@@ -124,7 +124,7 @@
 
                 <div class="col-sm-4">
                     <div class="win-and-get">
-                        <p>猜拳獲勝 可獲得:</p>
+                        <p data-i18n-text="winAndGet"></p>
                         <div>
                             <span><img src="images/ARINALOGO.png" alt=""></span>
                             <span class="win-number"><p>450</p></span>
@@ -134,9 +134,9 @@
                     </div>
 
                     <div class="play-history">
-                        <p>猜拳歷史紀錄(顯示先前5筆，不包含該次):</p>
+                        <p data-i18n-text="playHistoryTitle"></p>
                         <div>
-                        <p>猜拳歷史紀錄(顯示先前5筆，不包含該次):</p>
+                        <p data-i18n-text="playHistoryContent"></p>
                         </div>
                     </div>
 
