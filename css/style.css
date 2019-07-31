@@ -286,6 +286,30 @@ header {
 #record, #lottery{
     height:172px;
 }
+
+
+.modal{
+    z-index: 10;
+}
+.modal-dialog{
+    padding:2%;
+    max-width: 120%;
+    background-color: #222;
+    position: absolute;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+.modal-content{
+    background-color: #222;
+}
+#game-video {
+    background-color: #222;
+}
+#game-video video{
+    
+    margin-left:-10%;
+}
+
 /*====================04.list============*/
 #list{
     height: 700px;

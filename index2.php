@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <script src="js/web3.js"></script>
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/abi.js"></script>
@@ -161,6 +165,25 @@
                 </div>
             </div>
         </div>
+
+
+    <!-- Trigger the modal with a button -->
+
+
+    </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div id="game-video">
+                        <video controls width="120%">
+                            <source src="images/video/01PaperLose1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 <!------list-------------------->
     <section id="list">
@@ -259,7 +282,7 @@
         setInterval(function(){
             //console.log(imgarr[get_random()]);
             $(".game-img").empty().append(imgarr[get_random()]);
-        },1000);
+        },4000);
     });
 </script>
 
