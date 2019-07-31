@@ -110,12 +110,20 @@
                         </div>
                     </div>
 
-                    <div class="win-something">
+                    <div class="win-and-get">
                         <p data-i18n-text="winSomething"></p>
-
+                        <div>
+                            <span><img src="images/ARINALOGO.png" alt=""></span>
+                            <span class="win-number"><p>450</p></span>
+                            <span><img src="images/GIClogo.png" alt=""></span>
+                            <span class="win-number"><p>90</p></span>
+                        </div>
                     </div>
 
                     <div class="win-code">
+                        <div>
+                            <p id="lottery0"></p>
+                        </div>
                         <p data-i18n-text="winCode"></p>
                     </div>
                 </div>
@@ -137,15 +145,17 @@
 
                     <div class="play-history">
                         <p data-i18n-text="playHistoryTitle"></p>
+
                         <div>
-                        <p data-i18n-text="playHistoryContent"></p>
+                            <p id="record"></p>
                         </div>
                     </div>
 
                     <div class="prize-history">
                         <p data-i18n-text="prizeHistoryTitle"></p>
+
                         <div>
-                        <p data-i18n-text="prizeHistoryContent"></p>
+                            <p id="lottery"></p>
                         </div>
                     </div>
                 </div>
@@ -156,13 +166,13 @@
     <section id="list">
         <div class="container">
             <div class="row">
-                <div class="col-sm-1 col-md-3 model">
+                <div class="col-sm-3 col-md-3 model">
                     <img src="images/ARINA01.png" alt="">
                 </div>
-                <div class="col-sm-10 col-md-6 list">
+                <div class="col-sm-6 col-md-6 list">
                     <img src="images/WINNINGBET.png" alt="">
                 </div>
-                <div class="col-sm-1 col-md-3 model" id="model2">
+                <div class="col-sm-3 col-md-3 model" id="model2">
                     <img src="images/ARINA04_2.png" alt="">
                 </div>
             </div>
@@ -222,6 +232,7 @@
 
 
 <script type="text/javascript">
+/////隱藏navber
     $(function(){
         $(window).scroll(function () {
             var scrollVal = $(this).scrollTop();
@@ -234,7 +245,22 @@
         });
     });
 
+/////自動換圖
+    var imgarr = [
+        '<img src="images/ARINA05.png" alt="">',
+        '<img src="images/ARINA03.png" alt="">',
+        '<img src="images/ARINA02.png" alt="">'
+    ]
 
+    function get_random(){
+        return Math.floor(Math.random()*3)
+    }
+    $(function(){
+        setInterval(function(){
+            //console.log(imgarr[get_random()]);
+            $(".game-img").empty().append(imgarr[get_random()]);
+        },1000);
+    });
 </script>
 
 <script type='text/javascript' src='js/jquery.min.js'></script>
