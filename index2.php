@@ -72,7 +72,7 @@
         </div>
 
         <div class="row">
-            <div id="header-left" class="col-sm-7">
+            <div id="header-left" class="col-sm-12 col-md-7">
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/W1S7vUCfaEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -80,16 +80,18 @@
                 <img id="header-img" src="images/ARINAYAKYUKENLOGO.png" alt="">
                 <p id="header-content" data-i18n-text="headerContent"></p>
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-12  col-md-5">
 
             </div>
         </div>
+
+        
     </header>
 <!------game-------------------->
     <section id="game">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 game-left">
+                <div class="col-sm-12 col-md-4 game-left">
                     <div class="play-a-game">
                         <h5 data-i18n-text="playAGameH5"></h5>
                         <p data-i18n-text="playAGameP"></p>
@@ -118,11 +120,11 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4 game-img">
+                <div class="col-sm-10 col-md-4 game-img">
                     <img src="images/ARINA05.png" alt="">
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="win-and-get">
                         <p data-i18n-text="winAndGet"></p>
                         <div>
@@ -141,9 +143,9 @@
                     </div>
 
                     <div class="prize-history">
-                        <p>開獎歷史紀錄(顯示先前5筆，不包含該次):</p>
+                        <p data-i18n-text="prizeHistoryTitle"></p>
                         <div>
-                        <p>猜拳歷史紀錄(顯示先前5筆，不包含該次):</p>
+                        <p data-i18n-text="prizeHistoryContent"></p>
                         </div>
                     </div>
                 </div>
@@ -154,13 +156,13 @@
     <section id="list">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3 model">
+                <div class="col-sm-1 col-md-3 model">
                     <img src="images/ARINA01.png" alt="">
                 </div>
-                <div class="col-sm-6 list">
+                <div class="col-sm-10 col-md-6 list">
                     <img src="images/WINNINGBET.png" alt="">
                 </div>
-                <div class="col-sm-3 model" id="model2">
+                <div class="col-sm-1 col-md-3 model" id="model2">
                     <img src="images/ARINA04_2.png" alt="">
                 </div>
             </div>
@@ -190,7 +192,6 @@
 
                 <div id="bottom">
                     <div class="copyright">
-                    
                         <p>Copyright&copy; 2018.GIC-COIN All Rights Reserved.</p>
                         <div></div>
                     </div>
@@ -232,9 +233,6 @@
             }
         });
     });
-
-
-
 
 
 </script>
