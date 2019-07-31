@@ -118,9 +118,9 @@
                         <p data-i18n-text="winSomething"></p>
                         <div>
                             <span><img src="images/ARINALOGO.png" alt=""></span>
-                            <span class="win-number"><p>450</p></span>
+                            <span class="win-number"><p>0</p></span>
                             <span><img src="images/GIClogo.png" alt=""></span>
-                            <span class="win-number"><p>90</p></span>
+                            <span class="win-number"><p>0</p></span>
                         </div>
                     </div>
 
