@@ -141,9 +141,9 @@
                         <p data-i18n-text="winAndGet"></p>
                         <div>
                             <span><img src="images/ARINALOGO.png" alt=""></span>
-                            <span class="win-number"><p>250</p></span>
+                            <span class="win-number"><p id="expect-arina">0</p></span>
                             <span><img src="images/GIClogo.png" alt=""></span>
-                            <span class="win-number"><p>25</p></span>
+                            <span class="win-number"><p id="expect-gic">0</p></span>
                         </div>
                     </div>
 

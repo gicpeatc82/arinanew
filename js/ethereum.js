@@ -384,75 +384,45 @@ web3.eth.getAccounts(function(error, result) {
       $("#game-video").empty().append(videoPaperDraw[index]);
     } else if (comp == 0 && record == 2){
       $("#game-video").empty().append(vedeoPaperWin[index]);
+      log_events();
     } else if (comp == 1 && record == 0){
       $("#game-video").empty().append(videoScissorLose[index]);
     } else if (comp == 1 && record == 1){
       $("#game-video").empty().append(videoScissorDraw[index]);
     } else if (comp == 1 && record == 2){
       $("#game-video").empty().append(videoScissorWin[index]);
+      log_events();
     } else if (comp == 2 && record == 0){
       $("#game-video").empty().append(videoStoneLose[index]);
     } else if (comp == 2 && record == 1){
       $("#game-video").empty().append(videoStoneDraw[index]);
     } else if (comp == 2 && record == 2){
       $("#game-video").empty().append(videoStoneWin[index]);
+      log_events();
     }
     $("#paly-video").click();
   })
 
   .on('error', console.error);
 
-
-
-  //點擊按鈕後調用函數
-
-  // $("#paper").click(function() {
-
-  //     infoContract.methods.play_paper().send({from:userAccount,gas:250000})
-  //     .then((result)=>{
-  //       console.log(result);
-  //     });
-
-  // });
-
-  // $("#scissors").click(function() {
-
-  //     infoContract.methods.play_scissors().send({from:userAccount,gas:250000})
-  //     .then((result)=>{
-  //       console.log(result);
-  //     });
-  // });
-
-  // $("#stone").click(function() {
-
-  //     infoContract.methods.play_stone().send({from:userAccount,gas:250000})
-  //     .then((result)=>{
-  //       console.log(result);
-  //     });
-
-
-  // });
-
 });
 
+//點擊按鈕後調用函數
 function play_a_mora(mora){
   if (mora == "paper"){
     infoContract.methods.play_paper().send({from:userAccount,gas:250000})
     .then((result)=>{
       console.log(result);
-      log_events();
     });
   } else if(mora == "scissors"){
     infoContract.methods.play_scissors().send({from:userAccount,gas:250000})
     .then((result)=>{
       console.log(result);
-      log_events();
     });
   } else if(mora == "stone"){
     infoContract.methods.play_stone().send({from:userAccount,gas:250000})
     .then((result)=>{
       console.log(result);
-      log_events();
     });
   } 
   
@@ -482,8 +452,8 @@ function log_events(){
       winETH = eth_amount_judgment(_level);
       console.log("GIC= " + winGIC);
       console.log("Arina= " + winArina);
-      $("win-arina").html(Math.floor(winArina));
-      $("win-gic").html(winGIC);
+      $("#win-arina").html(Math.floor(winArina));
+      $("#win-gic").html(winGIC);
     });
   });
 }
@@ -788,7 +758,8 @@ function show_token(){
 
 
         var ETH = eth_amount_judgment(_level);
-
+          $("#expect-arina").html(Math.floor(Arina));
+          $("#expect-gic").html(GIC);
 
 
 
