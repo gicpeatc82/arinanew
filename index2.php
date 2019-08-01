@@ -80,7 +80,7 @@
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/W1S7vUCfaEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-
+                
                 <img id="header-img" src="images/ARINAYAKYUKENLOGO.png" alt="">
                 <p id="header-content" data-i18n-text="headerContent"></p>
             </div>
@@ -100,15 +100,15 @@
                         <h5 data-i18n-text="playAGameH5"></h5>
                         <p data-i18n-text="playAGameP"></p>
                         <div class="cta-group">
-                            <button type="button" class="cta" id="scissors">
+                            <button type="button" class="cta" id="scissors" onclick="play_a_mora('scissors')">
                                 <img src="images/Scissors.png" alt="">
                             </button>
 
-                            <button type="button" class="cta" id="stone">
+                            <button type="button" class="cta" id="stone" onclick="play_a_mora('stone')">
                                 <img src="images/Stone.png" alt="">
                             </button>
 
-                            <button type="button" class="cta" id="paper">
+                            <button type="button" class="cta" id="paper" onclick="play_a_mora('paper')">
                                 <img src="images/Paper.png" alt="">
                             </button>
                         </div>
@@ -118,9 +118,9 @@
                         <p data-i18n-text="winSomething"></p>
                         <div>
                             <span><img src="images/ARINALOGO.png" alt=""></span>
-                            <span class="win-number"><p>0</p></span>
+                            <span class="win-number"><p id="win-arina">0</p></span>
                             <span><img src="images/GIClogo.png" alt=""></span>
-                            <span class="win-number"><p>0</p></span>
+                            <span class="win-number"><p id="win-gic">0</p></span>
                         </div>
                     </div>
 
@@ -141,9 +141,9 @@
                         <p data-i18n-text="winAndGet"></p>
                         <div>
                             <span><img src="images/ARINALOGO.png" alt=""></span>
-                            <span class="win-number"><p>450</p></span>
+                            <span class="win-number"><p>250</p></span>
                             <span><img src="images/GIClogo.png" alt=""></span>
-                            <span class="win-number"><p>90</p></span>
+                            <span class="win-number"><p>25</p></span>
                         </div>
                     </div>
 
@@ -171,15 +171,13 @@
 
 
     </div>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+        <button id="paly-video" type="button" style="display:none" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
 
         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div id="game-video">
-                        <video controls width="120%">
-                            <source src="images/video/01PaperLose1.mp4" type="video/mp4">
-                        </video>
+                    
                     </div>
                 </div>
             </div>
@@ -284,6 +282,17 @@
             $(".game-img").empty().append(imgarr[get_random()]);
         },4000);
     });
+//////
+    // function get_random(){
+    //     return Math.floor(Math.random()*3)+1
+    // }
+    // $(function(){
+    //     let index = get_random()
+    //     console.log(index);
+    //     $("#game-video").empty().append(videoPaperDraw[index]);
+
+    //     $("#paly-video").click();
+    // });
 </script>
 
 <script type='text/javascript' src='js/jquery.min.js'></script>

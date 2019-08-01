@@ -58,19 +58,19 @@ function win(_result){
 
 if (_result == 0){
 
-        return "輸了!!!";
+        return "Lose!!!";
 
     }
 
     else if (_result == 1){
 
-        return "平手~";
+        return "Draw~";
 
     }
 
     else if (_result == 2){
 
-        return "贏啦!!!";
+        return "Win!!!";
 
     }
 
@@ -90,19 +90,19 @@ function mora(_orig){
 
       if (_orig == 0){
 
-          return "布";
+          return "Paper";
 
       }
 
       else if (_orig == 1){
 
-          return "剪刀";
+          return "Scissors";
 
       }
 
       else if (_orig == 2){
 
-          return "石頭";
+          return "Stone";
 
       }
 
@@ -324,28 +324,80 @@ web3.eth.getAccounts(function(error, result) {
 
     //console.log(event);
 
-    console.log("猜拳"+win(record));
+    console.log(win(record));
 
-    alert("猜拳"+win(record));
-    if (play == 0 && record == 0){
+    alert(win(record));
 
-    } else if (play == 0 && record == 1){
-      
-    } else if (play == 0 && record == 2){
+    var videoPaperDraw = [
+      '<iframe src="https://drive.google.com/file/d/1alkC-DghxWSiKHE09j74NzV3P9MfeX6O/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1YJ5jjNHHP0uBmRlm1hqdG-iqf6CkwgAK/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1yAfv-YglzzeVF21-4lKnbEGePP0regkp/preview" width="720" height="480"></iframe>'
+    ]
+    var vedeoPaperLose = [
+      '<iframe src="https://drive.google.com/file/d/1jovonEVePWNAfiE86Y2Bin2SQsZoiq7M/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1MqYb9mgZ_mtAExHEqdNNGO__4ZUtu9Jc/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1uBqWYJtvASlIc3TlL2gM-VTfdYesYGo7/preview" width="720" height="480"></iframe>'
+    ]
+    var vedeoPaperWin = [
+      '<iframe src="https://drive.google.com/file/d/1mATozzZ1OvXXRWN_9HMLxzK8idD_TP3l/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1SfcqUYvm11lydVVQYyAL4WdKUX4peJff/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1B4UNRR4JiYukufBg7s0QuDlwMKjvGu95/preview" width="720" height="480"></iframe>'
+    ]
+    var videoScissorDraw = [
+      '<iframe src="https://drive.google.com/file/d/1puutugmBTxSbE9PFoc2r0mRg7eztLqpF/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1dHP7DiaAhmB35f0Pk5H2MIpo4aYodx3k/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1ZHtqpQd-1wg664RfvJHTEIcb3ayNjkRw/preview" width="720" height="480"></iframe>'
+    ]
+    var videoScissorLose = [
+      '<iframe src="https://drive.google.com/file/d/1FJB_QJHA_W2UvX_LNdqQTxVBhElG2uJ3/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1ufuInEBKlDwXeaY12_IkpCA3q1Bk9xtW/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1dnbrx0CDuorILllTI5pVfPKe4lqJGKvQ/preview" width="720" height="480"></iframe>'
+    ]
+    var videoScissorWin = [
+      '<iframe src="https://drive.google.com/file/d/1h7xK0LbJVIQ2Hadj1JJZkLfu8Vk1vKxW/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1MhpbCWXE08ru4cEnwt9HIsEIGBUOGI28/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1PmlAjP0CWj5HWqag_c51GrRejtJNbHHu/preview" width="720" height="480"></iframe>'
+    ]
 
-    } else if (play == 1 && record == 0){
-
-    } else if (play == 1 && record == 1){
-
-    } else if (play == 1 && record == 2){
-
-    } else if (play == 2 && record == 0){
-
-    } else if (play == 2 && record == 1){
-
-    } else if (play == 2 && record == 2){
-
+    var videoStoneDraw = [
+      '<iframe src="https://drive.google.com/file/d/1HQTzkYLdR20GaEltktZp-L9ax2vlqoeV/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/11iIMx5K3MvLijC-nEZdlHe__ZpWnyfp_/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1Sdmp_K8Xs6cQfblggXpP__26REuVDmGC/preview" width="720" height="480"></iframe>'
+    ]
+    var videoStoneLose = [
+      '<iframe src="https://drive.google.com/file/d/1GWzIb9i0eyLi-KJrZds9qT73iJTZepEb/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1CJm2yxUKDAt8Ze6jtt_z75qDMAXK8Ydh/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/13XFR8HQk89RU-KxH2dXNCGsr4AAuPPGR/preview" width="720" height="480"></iframe>'
+    ]
+    var videoStoneWin = [
+      '<iframe src="https://drive.google.com/file/d/1-X9kdtncJf7BWgCtNLCr3TNnwxNsFn9Y/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1UxC2zZnNhjBDAvd1GWoLleyvvPAtK-mO/preview" width="720" height="480"></iframe>',
+      '<iframe src="https://drive.google.com/file/d/1WExySw_LArjj6Mv9caxqRFWUdl3kEaZ-/preview" width="720" height="480"></iframe>'
+    ]
+    // 0 => 布   1 => 剪刀   2 => 石頭
+    // 0 => 輸   1 => 平手   2 => 贏
+    let index = get_random()
+    //     $("#game-video").empty().append(videoPaperDraw[index]);
+    if (comp == 0 && record == 0){
+      $("#game-video").empty().append(vedeoPaperLose[index]);
+    } else if (comp == 0 && record == 1){
+      $("#game-video").empty().append(videoPaperDraw[index]);
+    } else if (comp == 0 && record == 2){
+      $("#game-video").empty().append(vedeoPaperWin[index]);
+    } else if (comp == 1 && record == 0){
+      $("#game-video").empty().append(videoScissorLose[index]);
+    } else if (comp == 1 && record == 1){
+      $("#game-video").empty().append(videoScissorDraw[index]);
+    } else if (comp == 1 && record == 2){
+      $("#game-video").empty().append(videoScissorWin[index]);
+    } else if (comp == 2 && record == 0){
+      $("#game-video").empty().append(videoStoneLose[index]);
+    } else if (comp == 2 && record == 1){
+      $("#game-video").empty().append(videoStoneDraw[index]);
+    } else if (comp == 2 && record == 2){
+      $("#game-video").empty().append(videoStoneWin[index]);
     }
+    $("#paly-video").click();
   })
 
   .on('error', console.error);
@@ -354,35 +406,91 @@ web3.eth.getAccounts(function(error, result) {
 
   //點擊按鈕後調用函數
 
-  $("#paper").click(function() {
+  // $("#paper").click(function() {
 
-      infoContract.methods.play_paper().send({from:userAccount,gas:250000})
-      .then((result)=>{
-        console.log(result);
-      });
+  //     infoContract.methods.play_paper().send({from:userAccount,gas:250000})
+  //     .then((result)=>{
+  //       console.log(result);
+  //     });
 
-  });
+  // });
 
-  $("#scissors").click(function() {
+  // $("#scissors").click(function() {
 
-      infoContract.methods.play_scissors().send({from:userAccount,gas:250000})
-      .then((result)=>{
-        console.log(result);
-      });
-  });
+  //     infoContract.methods.play_scissors().send({from:userAccount,gas:250000})
+  //     .then((result)=>{
+  //       console.log(result);
+  //     });
+  // });
 
-  $("#stone").click(function() {
+  // $("#stone").click(function() {
 
-      infoContract.methods.play_stone().send({from:userAccount,gas:250000})
-      .then((result)=>{
-        console.log(result);
-      });
+  //     infoContract.methods.play_stone().send({from:userAccount,gas:250000})
+  //     .then((result)=>{
+  //       console.log(result);
+  //     });
 
 
-  });
+  // });
 
 });
 
+function play_a_mora(mora){
+  if (mora == "paper"){
+    infoContract.methods.play_paper().send({from:userAccount,gas:250000})
+    .then((result)=>{
+      console.log(result);
+      log_events();
+    });
+  } else if(mora == "scissors"){
+    infoContract.methods.play_scissors().send({from:userAccount,gas:250000})
+    .then((result)=>{
+      console.log(result);
+      log_events();
+    });
+  } else if(mora == "stone"){
+    infoContract.methods.play_stone().send({from:userAccount,gas:250000})
+    .then((result)=>{
+      console.log(result);
+      log_events();
+    });
+  } 
+  
+}
+
+function log_events(){
+  web3.eth.getAccounts(function(error, result) {
+    userAccount = result[0];
+    Promise.all([
+      ArinaContract.methods.balanceOf(address).call(),
+      infoContract.methods.total_airdrop_Arina().call(),
+      infoContract.methods.airdrop_Arina().call(),
+      infoContract.methods.level_judgment(userAccount).call(),
+      infoContract.methods.airdrop_GIC().call(),
+    ]).then(([Arina_totBalance, total_airdrop_Arina, airdrop_Arina, _level, airdrop_GIC])=>{
+
+      var  Arina_totBalance = Arina_totBalance/(10**8)
+      var  total_airdrop_Arina =  total_airdrop_Arina/(10**8)
+      var  airdrop_Arina =  airdrop_Arina/(10**8)
+      winGIC =  airdrop_GIC/(10**18)
+
+      //console.log(Arina_totBalance, total_airdrop_Arina, airdrop_Arina, _level, airdrop_GIC);
+      var now_airdrop = Arina_judgment(Arina_totBalance, total_airdrop_Arina, airdrop_Arina);
+      //console.log(now_airdrop);
+      winArina = Arina_amount_judgment(_level, now_airdrop);
+
+      winETH = eth_amount_judgment(_level);
+      console.log("GIC= " + winGIC);
+      console.log("Arina= " + winArina);
+      $("win-arina").html(Math.floor(winArina));
+      $("win-gic").html(winGIC);
+    });
+  });
+}
+////radom 1~3
+function get_random(){
+  return Math.floor(Math.random()*3)
+}
 
 
 //show函數包裝給setInterval做每秒刷新
@@ -391,27 +499,27 @@ function show(){
 
 //讀取地址(web3.js beta版在讀取地址後地址可能會丟失,所以每次動作都先讀取地址)
 
-web3.eth.getAccounts(function(error, result) {
+  web3.eth.getAccounts(function(error, result) {
 
-    userAccount = result[0];
+      userAccount = result[0];
 
-    if(userAccount != old_address){
+      if(userAccount != old_address){
 
-      alert("地址更新");
+        alert("New Address");
 
-    }
+      }
 
-    if (userAccount == undefined){
+      if (userAccount == undefined){
 
-      $("#address").html("未載入地址");
+        $("#address").html("Adddress not found");
 
-    }
+      }
 
-    else{
+      else{
 
-      $("#address").html(userAccount);
+        $("#address").html(userAccount);
 
-    }
+      }
 
 
 
@@ -431,9 +539,9 @@ infoContract.getPastEvents("Play_game",{filter:{from:userAccount},fromBlock:0,to
 
     if (userAccount == undefined){
 
-      $("#record0").html("未載入地址");
+      $("#record0").html("Adddress not found");
 
-      $("#record").html("未載入地址");
+      $("#record").html("Adddress not found");
 
     }
 
@@ -441,9 +549,9 @@ infoContract.getPastEvents("Play_game",{filter:{from:userAccount},fromBlock:0,to
 
     else if (length == 0){
 
-      $("#record0").html("未有猜拳紀錄");
+      $("#record0").html("No record");
 
-      $("#record").html("未有猜拳紀錄");
+      $("#record").html("No record");
 
     }
 
@@ -457,13 +565,13 @@ infoContract.getPastEvents("Play_game",{filter:{from:userAccount},fromBlock:0,to
 
       var comp = event_last.returnValues.comp;
 
-      $("#record0").html("玩家出"+mora(play)+", 電腦出"+mora(comp)+", 結果:"+win(record)+"<br>");
+      $("#record0").html("Player: "+mora(play)+", Computer: "+mora(comp)+", Result: "+win(record)+"<br>");
 
 
 
       if (length < 2){
 
-      $("#record").html("未有猜拳紀錄");
+      $("#record").html("No record");
 
       }
 
@@ -477,7 +585,7 @@ infoContract.getPastEvents("Play_game",{filter:{from:userAccount},fromBlock:0,to
 
         var  comp = event_last.returnValues.comp;
 
-        $("#record").html("玩家出"+mora(play)+", 電腦出"+mora(comp)+", 結果:"+win(record)+"<br>");
+        $("#record").html("Player: "+mora(play)+", Computer: "+mora(comp)+", Result: "+win(record)+"<br>");
 
 
 
@@ -499,7 +607,7 @@ infoContract.getPastEvents("Play_game",{filter:{from:userAccount},fromBlock:0,to
 
           var comp = event_last.returnValues.comp;
 
-          $("#record").append("玩家出"+mora(play)+", 電腦出"+mora(comp)+", 結果:"+win(record)+"<br>");
+          $("#record").append("Player: "+mora(play)+", Computer: "+mora(comp)+", Result: "+win(record)+"<br>");
 
          }
 
@@ -523,9 +631,9 @@ infoContract.getPastEvents("Random",{filter:{from:userAccount},fromBlock:0,toBlo
 
     if (userAccount == undefined){
 
-      $("#lottery0").html("未載入地址");
+      $("#lottery0").html("Adddress not found");
 
-      $("#lottery").html("未載入地址");
+      $("#lottery").html("Adddress not found");
 
     }
 
@@ -533,9 +641,9 @@ infoContract.getPastEvents("Random",{filter:{from:userAccount},fromBlock:0,toBlo
 
     else if (length == 0){
 
-      $("#lottery0").html("未有開獎紀錄");
+      $("#lottery0").html("No record");
 
-      $("#lottery").html("未有開獎紀錄");
+      $("#lottery").html("No record");
 
 
 
@@ -549,11 +657,11 @@ infoContract.getPastEvents("Random",{filter:{from:userAccount},fromBlock:0,toBlo
 
       var random_lottery = event_last.returnValues.random_lottery;
 
-      $("#lottery0").html("玩家開獎號碼為"+random_player+", 電腦開獎號碼為"+random_lottery+"<br>");
+      $("#lottery0").html("Player Number: "+random_player+", Computer Number: "+random_lottery+"<br>");
 
       if (length < 2){
 
-      $("#lottery").html("未有開獎紀錄");
+      $("#lottery").html("No record");
 
       }
 
@@ -565,7 +673,7 @@ infoContract.getPastEvents("Random",{filter:{from:userAccount},fromBlock:0,toBlo
 
         var random_lottery = event_last.returnValues.random_lottery;
 
-        $("#lottery").html("玩家開獎號碼為"+random_player+", 電腦開獎號碼為"+random_lottery+"<br>");
+        $("#lottery").html("Player Number: "+random_player+", Computer Number: "+random_lottery+"<br>");
 
 
 
@@ -583,7 +691,7 @@ infoContract.getPastEvents("Random",{filter:{from:userAccount},fromBlock:0,toBlo
 
           var random_lottery = event_last.returnValues.random_lottery;
 
-          $("#lottery").append("玩家開獎號碼為"+random_player+", 電腦開獎號碼為"+random_lottery+"<br>");
+          $("#lottery").append("Player Number: "+random_player+", Computer Number: "+random_lottery+"<br>");
 
         }
 
@@ -601,7 +709,7 @@ infoContract.getPastEvents("Random",{filter:{from:userAccount},fromBlock:0,toBlo
 
       if (userAccount == undefined){
 
-        $("#readyTime").html("未載入地址");
+        $("#readyTime").html("Adddress not found");
 
       }
 

@@ -236,7 +236,7 @@ header {
 .win-code div{
     background:rgba(131, 131, 131, 0.808); 
     border-radius: 5px;
-    height:50px;
+    height:35px;
 }
 
 
@@ -284,7 +284,7 @@ header {
 }
 
 #record, #lottery{
-    height:172px;
+    height:165px;
 }
 
 
@@ -305,10 +305,7 @@ header {
 #game-video {
     background-color: #222;
 }
-#game-video video{
-    
-    margin-left:-10%;
-}
+
 
 /*====================04.list============*/
 #list{
