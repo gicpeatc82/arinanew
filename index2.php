@@ -67,10 +67,10 @@
 
             <div class="nav" id="nav-link">
                 <ul>
-                    <li><a href="#top" >HOME</a></li>
-                    <li><a href="" >HOW TO PLAY</a></li>
-                    <li><a href="" >TABLE</a></li>
-                    <li><a href="" >SMART CONTRACT</a></li>
+                    <li><a href="https://www.arinamillion.com/arinanew/" >HOME</a></li>
+                    <li><a href="howtoplay.php" >HOW TO PLAY</a></li>
+                    <li><a href="#lottery0" >TABLE</a></li>
+                    <li><a href="https://etherscan.io/address/0xcCdA5213d453388fB5fB43054BC261c8636b1e51#code" >SMART CONTRACT</a></li>
                 </ul>
             </div>
         </div>
