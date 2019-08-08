@@ -233,15 +233,15 @@ header .row{
     width: 65%;
     margin-top: 1%;
     position: absolute;
-    left: 45%;
+    left: 42%;
     top: 100%;
     font-size: 2vmin;
-    line-height: 150%;
+    line-height: 120%;
 }
 /*====================03.game============*/
 
 #game{
-    height: 110%;
+    height: 125%;
     padding: 5% 0;
     background-color: #222;
     color:#fff;
@@ -249,7 +249,7 @@ header .row{
     padding-bottom:0;
 }
 #game .container{
-    max-width: 1350px;
+    max-width: 1850px;
 }
 .game-left div{
     margin-top:50px;
@@ -283,8 +283,8 @@ header .row{
     margin:0 auto;
 }
 .game-img img{
-    margin: 0 -10%;
-    height:60%;
+    margin: 0;
+    height:70%;
     width:auto;
     z-index:3;
 }
@@ -388,6 +388,7 @@ header .row{
 }
 .footer-content{
     width:100%;
+    height:95%;
     top: 5%;
     position: absolute;
     z-index:4;
@@ -400,12 +401,12 @@ header .row{
 #dapp-listing h3{
     font-weight:bold;
     color: #fff;
-    margin: 50px 0;
+    margin: 5% 0 2% 0;
 }
 #dapp-listing div{
     display: inline-block;
     
-    padding: 0 40px;
+    padding: 0 2.5%;
 }
 #dapp-listing img {
     filter: brightness(2000)contrast(50)saturate(0);
@@ -424,15 +425,15 @@ header .row{
     width:100%;
     color: #fff;
     position: absolute;
-    margin-top:7%;
+    bottom:5%;
+    margin-top:0;
+    padding:0 5%;
 }
 #bottom div {
     display: inline-block;
-    width: 33%;
-    padding: 0 30px;
+    width: 32%;
 }
 .copyright{
-    padding-top:8%;
 }
 .copyright p{
     font-size:2.5vmin;
@@ -440,9 +441,7 @@ header .row{
 }
 
 #bottom .nav a{
-    padding: 0 10px;
     color: #fff;
-    font-size: 10px;
 }
 #bottom .ARINAUNIVERSELOGO{
     padding-left:3%;
@@ -450,30 +449,18 @@ header .row{
 }
 
 #bottom .nav{
-    padding: 0 15%;
+    padding: 0 30%;
 }
 #bottom .nav a img{
     display:inline-block;
-    height:25px;
+    height:60%;
     width:auto;
 }
-
-
-@media (min-width: 576px) {
-    .model img{
-        height:
-    }
+.icon{
+    position: absolute;
+    top: 40%;
 }
 
-
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 992) {
-    
-}
-
-@media (min-width: 1200px) {
-
+.icon li{
+    padding: 0 3%;
 }

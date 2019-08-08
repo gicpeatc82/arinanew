@@ -223,23 +223,31 @@
                 <div id="dapp-listing" class="container">
                     <h3 data-i18n-text="dappListing"></h3>
                     <div class="small-dapp">
-                        <img src="images/8DAPPLISTING/dapp_logo.png" alt="">
+                        <a target="_blank" href="https://www.dapp.com/zh/dapp/arina-land-tycoon">
+                            <img src="images/8DAPPLISTING/dapp_logo.png" alt="">
+                        </a>
                     </div>
                     <div class="small-dapp">
-                        <img src="images/8DAPPLISTING/dappreview.png" alt="">
+                        <a target="_blank" href="https://dapp.review/dapp/11734/ARINA-LAND-TYCOON">
+                            <img src="images/8DAPPLISTING/dappreview.png" alt="">
+                        </a>
                     </div>
                     <div class="big-dapp">
-                        <img src="images/8DAPPLISTING/dapp_online.png" alt="">
+                        <a target="_blank" href="https://dapponline.io/dappDetail/2377">
+                            <img src="images/8DAPPLISTING/dapp_online.png" alt="">
+                        </a>
                     </div>
                     <div class="big-dapp">
-                        <img src="images/8DAPPLISTING/dapptotal.png" alt="">
+                        <a target="_blank" href="https://dapptotal.com/detail/8395/ARINA-LAND-TYCOON">
+                            <img src="images/8DAPPLISTING/dapptotal.png" alt="">
+                        </a>
                     </div>
                 </div>
 
                 <div id="bottom">
                     <div class="copyright">
                         <p>Copyright&copy; 2018.GIC-COIN All Rights Reserved.</p>
-                        <div></div>
+                        
                     </div>
 
                     <div class="footer ARINAUNIVERSELOGO">
@@ -250,12 +258,17 @@
                         <ul class="nav">
                             <li>
                                 <a href="https://www.facebook.com/GlobalIdolCoin/"><img src="images/icon/Facebook.png" alt=""></a>
+                            </li>
+                            <li>
                                 <a href="https://twitter.com/GIC48226830"><img src="images/icon/Twitter.png" alt=""></a>
+                            </li>
+                            <li>
                                 <a href="https://www.instagram.com/taiwan_gic/"><img src="images/icon/Instagram.png" alt=""></a>
+                            </li>
+                            <li>
                                 <a href="https://www.youtube.com/channel/UCm5YE9imTe4LVGOJrSpoJ2g/featured?view_as=subscriber"><img src="images/icon/Youtube.png" alt=""></a>
                             </li>
                         </ul>
-                        <div></div>
                     </div>
                 </div>
             </div>
