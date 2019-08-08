@@ -43,42 +43,57 @@
 <body>
 <!------header-------------------->
     <header id="header">
-        <div id="navber">
-            <div id="logo">
+        <img src="images/BG.png" alt="">
+        <nav class="navbar navbar-expand-sm " id="navber">
+            <!-- Brand/logo -->
+            <div class="navbar-brand navbar-brand01" >
                 <img src="images/ARINAUNIVERSELOGO.png" alt="logo">
             </div>
-
-            <div class="nav">
-                <select id="language" class="selectpicker form-control form-control-sm" data-width="auto" data-style="btn-primary" name="language" onchange="changelang()">
-                    <option value="en">ENG</option>
-                    <option value="zh_TW">TW</option>
-                    <option value="zh_CN">CN</option>
-                </select> 
+            <div class="navbar-brand navbar-brand02" style="display:none" >
+                <img style="width:50%;" src="images/ARINALOGO.png" alt="logo">
             </div>
+            
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item" id="nav-link" style="max-width:20%;">
+                    <a class="nav-link link-main" href="https://www.arinamillion.com/arinanew/" >HOME</a>
+                </li>
+                <li class="nav-item" style="max-width:37%;">
+                    <a class="nav-link link-main" href="howtoplay.php" >HOW TO PLAY</a>
+                </li>
+                <li class="nav-item" style="max-width:20%;">
+                <a class="nav-link link-main" href="#lottery0" >TABLE</a>
+                </li>
+                <li class="nav-item" style="max-width:40%;">
+                <a class="nav-link link-main" href="https://etherscan.io/address/0xcCdA5213d453388fB5fB43054BC261c8636b1e51#code" >SMART CONTRACT</a>
+                </li>
+                <li class="nav-item facebook">
+                <a class="nav-link" href="https://www.facebook.com/GlobalIdolCoin/"><img src="images/icon/Facebook.png" alt=""></a>
+                </li>
+                <li class="nav-item social">
+                <a class="nav-link" href="https://twitter.com/GIC48226830"><img src="images/icon/Twitter.png" alt=""></a>
+                </li>
+                <li class="nav-item social">
+                <a class="nav-link" href="https://www.instagram.com/taiwan_gic/"><img src="images/icon/Instagram.png" alt=""></a>
+                </li>
+                <li class="nav-item social">
+                <a class="nav-link" href="https://www.youtube.com/channel/UCm5YE9imTe4LVGOJrSpoJ2g/featured?view_as=subscriber"><img src="images/icon/Youtube.png" alt=""></a>
+                </li>
+                <li class="nav-item language">
+                    <select id="language" class="selectpicker form-control form-control-sm" data-width="auto" data-style="btn-primary" name="language" onchange="changelang()">
+                        <option value="en">ENG</option>
+                        <option value="zh_TW">TW</option>
+                        <option value="zh_CN">CN</option>
+                    </select> 
+                </li>
+            </ul>
+        </nav>
 
-            <div class="nav">
-                <span class="social">
-                    <a href="https://www.facebook.com/GlobalIdolCoin/"><img src="images/icon/Facebook.png" alt=""></a>
-                    <a href="https://twitter.com/GIC48226830"><img src="images/icon/Twitter.png" alt=""></a>
-                    <a href="https://www.instagram.com/taiwan_gic/"><img src="images/icon/Instagram.png" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UCm5YE9imTe4LVGOJrSpoJ2g/featured?view_as=subscriber"><img src="images/icon/Youtube.png" alt=""></a>
-                </span>
-            </div>
-
-            <div class="nav" id="nav-link">
-                <ul>
-                    <li><a href="https://www.arinamillion.com/arinanew/" >HOME</a></li>
-                    <li><a href="howtoplay.php" >HOW TO PLAY</a></li>
-                    <li><a href="#lottery0" >TABLE</a></li>
-                    <li><a href="https://etherscan.io/address/0xcCdA5213d453388fB5fB43054BC261c8636b1e51#code" >SMART CONTRACT</a></li>
-                </ul>
-            </div>
-        </div>
 
         <div class="row">
             <div id="header-left" class="col-sm-12 col-md-7">
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/W1S7vUCfaEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/W1S7vUCfaEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 
                 <img id="header-img" src="images/ARINAYAKYUKENLOGO.png" alt="">
@@ -187,13 +202,13 @@
     <section id="list">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3 col-md-3 model">
+                <div class="col-sm-3 col-md-3 model model1">
                     <img src="images/ARINA01.png" alt="">
                 </div>
                 <div class="col-sm-6 col-md-6 list">
                     <img src="images/WINNINGBET.png" alt="">
                 </div>
-                <div class="col-sm-3 col-md-3 model" id="model2">
+                <div class="col-sm-3 col-md-3 model model2">
                     <img src="images/ARINA04_2.png" alt="">
                 </div>
             </div>
@@ -315,6 +330,19 @@
 <script type='text/javascript' src='js/custom.js'></script>
 <script type="text/javascript" src="js/jquery.i18n.properties.js"></script>
 <script type="text/javascript" src="js/common_i18n.js"></script>
+
+
+<script>
+    $(function(){
+        var width = $(this).width();
+        if(width<1150){
+            $(".navbar-brand01").hide();
+            $(".navbar-brand02").show();
+
+        }
+        
+    });
+</script>
 
 </body>
 

@@ -7,7 +7,7 @@ html, body {
 body {
     padding: 0px;
     margin: 0px;
-    font-size: 14px;
+    font-size: 1.5vmin;
     line-height: 1.42857143;
     color: #fff;
     background-color: #333;
@@ -21,10 +21,13 @@ body {
 h1, h2, h3, h4, h5, h6, p {
     margin: 0px;
     padding: 0px;
-    line-height: 30px;
+    line-height: 150%;
     color: #fff;
+    font-family: 'Montserrat', sans-serif,'Microsoft JhengHei';
 }
-
+p{
+    font-size:3.5vmin;
+}
 ul, ol {
     list-style: none;
     margin: 0px;
@@ -63,7 +66,7 @@ section {
 h2{
     margin-bottom: 75px;
     text-align: center;
-    font-size: 40px;
+    font-size: 4vmin;
     line-height: 50px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -71,22 +74,32 @@ h2{
 
 /*====================02.header============*/
 header {
-    left: 0;
+    /* left: 0;
     right: 0;
     background-image: url(../images/BG.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 100%; */
+    position: relative;
 }
-
+nav{
+    position: absolute;
+    top:0;
+    left:0;
+}
+header .row{
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
 #navber{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: fixed;
-    height: 80px;
     width: 100%;
     left: 0;
     right: 0;
@@ -96,19 +109,39 @@ header {
     background-image: url(../images/ListBG.png);
     
 }
-#logo {
+ .navbar-brand {
     float: left;
-    padding:10px 0 10px 60px;
+    padding: 1% 0 0 5%;
+}
+/*
+.navbar-brand img{
+    height:100%;
+    width:auto;
+} */
+.nav-link{
+    color:#fff;
 }
 
-#logo img{
-    height:60px;
-    width:auto;
+.link-main:hover{
+    color:#fff;
+    border: 1px solid #fff;
+    border-radius: 25px;
 }
-.nav {
-    float: right;
-    margin-top:10px;
-    padding: 15px 5px;
+.navbar-nav{
+    right: 0;
+    position: absolute;
+}
+.social {
+    width:5%;
+    margin-top:1%;
+} 
+.facebook{
+    width:3.5%;
+    margin-top:1%;
+}
+/* .nav {
+    display:inline-block;
+    margin: 2% 0;
 }
 
 .nav span {
@@ -119,40 +152,43 @@ header {
     color: #fff;
     text-transform: capitalize;
     display: inline-block;
-    /* padding: 10px 12px; */
-    font-size: 20px;
+    font-size: 2vmin;
     font-weight:bold;
 }
-.social a{
-    padding:0 5px;
+.social {
+    width:10%;
+} */
+/* .social img{
+    width:55%;
 }
-.social img{
-    width:80%;
-}
-#nav-link{
-    margin: 10px;
-}
-#nav-link ul li{
+.nav-social{
+    width:30%;
+} */
+
+/* #nav-link ul li{
     display: inline-block;
     margin: 0;
 }
 
 #nav-link ul li a{
     color: #fff;
-    padding:0 10px;
+    padding:0;
+    font-size: 2.5vmin;
     text-decoration:none;
 }
 #nav-link ul li a:hover {
     border: 1px solid #fff;
     border-radius: 25px;
+} */
+.language{
+    margin-top:1%;
 }
 #language{
     color: #fff;
     background-color: #444;
     border: 0;
     border-radius: 25px;
-    margin-top: -5px;
-    margin-right: 10px;
+
 }
 #language option{
     color: #fff;
@@ -163,7 +199,7 @@ header {
     margin-right:10%;
 }
 #header-left{
-    margin-top: 150px;
+    margin-top: 10%;
 }
 #header-video{
     /* height:50%; */
@@ -194,17 +230,19 @@ header {
 }
 
 #header-content{
-    margin-top: 30px;
+    width: 65%;
+    margin-top: 1%;
     position: absolute;
     left: 45%;
     top: 100%;
-    font-size: 0.7em;
-    line-height: 25px;
+    font-size: 2vmin;
+    line-height: 150%;
 }
 /*====================03.game============*/
 
 #game{
-    min-height: 700px;
+    height: 110%;
+    padding: 5% 0;
     background-color: #222;
     color:#fff;
     text-align: center;
@@ -231,7 +269,7 @@ header {
     background-color: #222;
 }
 .win-code p{
-    font-size:0.7em;
+    font-size:2.5vmin;
 }
 .win-code div{
     background:rgba(131, 131, 131, 0.808); 
@@ -246,8 +284,8 @@ header {
 }
 .game-img img{
     margin: 0 -10%;
+    height:60%;
     width:auto;
-    height:700px;
     z-index:3;
 }
 
@@ -274,7 +312,7 @@ header {
     margin-top:5%;
 }
 .play-history p, .prize-history p{
-    font-size: 0.7em;
+    font-size: 2.5vmin;
     margin:0;
 }
 .play-history div, .prize-history div{
@@ -309,7 +347,6 @@ header {
 
 /*====================04.list============*/
 #list{
-    height: 700px;
     background-color: #222;
     padding:0;
 }
@@ -321,8 +358,8 @@ header {
     position:relative;
 }
 .model img{
-    height: 900px;
-    width: auto;
+    /* height: 85vh;
+    width: auto; */
     z-index:-1;
     margin-top:10px;
 }
@@ -331,13 +368,16 @@ header {
     width:110%;
     z-index:2;
 }
-#model2 img{
-    float: right;
+.model1 img{
+    width: 190%;
+}
+.model2 img{
+    width: 100%;
 }
 
 /*====================05.footer============*/
 #footer{
-    margin-top:-13%;
+    margin-top:-25%;
     position:relative;
     height:100%
 }
@@ -395,7 +435,7 @@ header {
     padding-top:8%;
 }
 .copyright p{
-    font-size:0.7em;
+    font-size:2.5vmin;
     margin-bottom: 0;
 }
 
@@ -416,4 +456,24 @@ header {
     display:inline-block;
     height:25px;
     width:auto;
+}
+
+
+@media (min-width: 576px) {
+    .model img{
+        height:
+    }
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992) {
+    
+}
+
+@media (min-width: 1200px) {
+
 }
