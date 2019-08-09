@@ -237,7 +237,7 @@
                             <img src="images/8DAPPLISTING/dapp_online.png" alt="">
                         </a>
                     </div>
-                    <div class="big-dapp">
+                    <div class="big-dapp big-dapp2">
                         <a target="_blank" href="https://dapptotal.com/detail/8395/ARINA-LAND-TYCOON">
                             <img src="images/8DAPPLISTING/dapptotal.png" alt="">
                         </a>
@@ -245,6 +245,7 @@
                 </div>
 
                 <div id="bottom">
+                    <hr>
                     <div class="copyright">
                         <p>Copyright&copy; 2018.GIC-COIN All Rights Reserved.</p>
                         

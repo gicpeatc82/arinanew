@@ -311,14 +311,14 @@ header .row{
     position: absolute;
     transform: translate(-50%, 0);
     top:0;
-    margin-top: 0;
+    margin-top: 3%;
     width:auto;
     z-index:0;
 }
 
 
 .win-and-get div{
-    margin: 3% 0;
+    margin: 3% -15%;
 }
 .win-and-get span{
     margin:0 5px;
@@ -333,7 +333,7 @@ header .row{
 }
 .win-number p{
     display:inline-block;
-    font-size: 4vw;
+    font-size: 5vw;
 }
 .play-history, .prize-history{
     margin-top:5%;
@@ -393,6 +393,7 @@ header .row{
     z-index:2;
 }
 .model1 img{
+    width: 110%;
 }
 .model2 img{
     width: 100%;
@@ -400,7 +401,7 @@ header .row{
 
 /*====================05.footer============*/
 #footer{
-    margin-top:-30%;
+    margin-top:-40%;
     position:relative;
     height:100%
 }
@@ -418,7 +419,7 @@ header .row{
 }
 #dapp-listing{
     max-width: 1240px;
-    width: 90%;
+    width: 70%;
     margin-top: 13%;
     text-align: center;
     font-size: 2vw;
@@ -446,7 +447,9 @@ header .row{
 .big-dapp{
     width: 28%;
 }
-
+.big-dapp2 {
+    padding-bottom: 5%;
+}
 #bottom {
     width:100%;
     color: #fff;
@@ -455,27 +458,28 @@ header .row{
     margin-top:0;
     padding:0 5%;
 }
-#bottom div {
+.copyright, .ARINAUNIVERSELOGO {
     display: inline-block;
     width: 32%;
 }
 .copyright{
     position: absolute;
-    top: 60%;
+    top: 70%;
 }
 .copyright p{
     font-size:1vw;
     margin-bottom: 0;
 }
-
+#bottom hr{
+    border-top:1px solid #fff;
+}
 #bottom .nav a{
     color: #fff;
     font-size: 2vw;
 }
 #bottom .ARINAUNIVERSELOGO{
     padding-top: 3%;
-    margin-left: 35%;
-}
+    margin-left: 37%;
 }
 
 #bottom .nav{
@@ -488,12 +492,13 @@ header .row{
 }
 .icon{
     position: absolute;
-    top: 40%;
-    left: 75%;
+    top: 55%;
+    right: 3%;
+    width:20%;
 }
 
 .icon li{
-    padding: 0 3%;
+    padding: 0 4%;
 }
 
 
