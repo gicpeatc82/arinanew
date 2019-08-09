@@ -464,7 +464,7 @@ header .row{
 }
 .copyright{
     position: absolute;
-    top: 70%;
+    top: 62%;
 }
 .copyright p{
     font-size:1vw;
@@ -478,7 +478,6 @@ header .row{
     font-size: 2vw;
 }
 #bottom .ARINAUNIVERSELOGO{
-    padding-top: 3%;
     margin-left: 37%;
 }
 
@@ -492,7 +491,7 @@ header .row{
 }
 .icon{
     position: absolute;
-    top: 55%;
+    top: 45%;
     right: 3%;
     width:20%;
 }
