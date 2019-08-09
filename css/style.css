@@ -235,7 +235,7 @@ header .row{
     position: absolute;
     left: 77%;
     top: 128%;
-    font-size: 2vmin;
+    font-size: 1.5vw;
     line-height: 135%;
     transform: translate(-50%, -50%);
 }
@@ -251,6 +251,7 @@ header .row{
     padding-bottom:0;
 }
 #game .container{
+    
     max-width: 2050px;
 }
 .game-left{
@@ -324,7 +325,6 @@ header .row{
     margin-top:5%;
 }
 .play-history p, .prize-history p{
-    font-size: 1.2vw;
     line-height: 150%;
 }
 .play-history div, .prize-history div{
@@ -501,6 +501,9 @@ header .row{
     .game-img img{
         height:60%;
     }
+    .play-history p, .prize-history p {
+        font-size: 1.4vw;
+    }
 }
 
 @media (min-width: 1020px) {
@@ -511,14 +514,20 @@ header .row{
         height:55%;
         margin-left:-10%;
     }
+    .play-history p, .prize-history p {
+        font-size: 1.35vw;
+    }
 }
-}
+
 @media (min-width: 1250px) {
     #game{
-        height: 750px;
+        height: 820px;
     }
     .game-img img{
-        height:70%;
+        height:57%;
+    }
+    .play-history p, .prize-history p {
+        font-size: 1.3vw;
     }
 }
 
@@ -529,6 +538,9 @@ header .row{
     .game-img img{
         height:75%;
         margin-left:-10%;
+    }
+    .play-history p, .prize-history p {
+        font-size: 1.25vw;
     }
 }
 }
