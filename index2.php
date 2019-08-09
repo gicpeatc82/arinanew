@@ -44,7 +44,7 @@
 <!------header-------------------->
     <header id="header">
         <img src="images/BG.png" alt="">
-        <nav class="navbar navbar-expand-sm " id="navber">
+        <nav class="navbar navbar-expand-lg " id="navber">
             <!-- Brand/logo -->
             <div class="navbar-brand navbar-brand01" >
                 <img src="images/ARINAUNIVERSELOGO.png" alt="logo">
@@ -151,7 +151,7 @@
                     <img src="images/ARINA05.png" alt="">
                 </div>
 
-                <div class="col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-4 game-right">
                     <div class="win-and-get">
                         <p data-i18n-text="winAndGet"></p>
                         <div>
