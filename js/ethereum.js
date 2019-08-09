@@ -390,14 +390,14 @@ infoContract.getPastEvents("Random",{filter:{from:userAccount},fromBlock:0,toBlo
 
       var PlayerNumber = jQuery.i18n.prop('PlayerNumber');
       var ComputerNumber = jQuery.i18n.prop('ComputerNumber');
-      $("#lottery0").html(PlayerNumber + random_player + ComputerNumber + random_lottery+"<br>");
+      $("#lottery0").html(PlayerNumber + random_player + "<br>"+ ComputerNumber + random_lottery+"<br>");
       if (length < 2){
       $("#lottery").html("No record");
       } else{
         var event_last = events[length-2]
         var random_player = event_last.returnValues.random_player;
         var random_lottery = event_last.returnValues.random_lottery;
-        $("#lottery").html(PlayerNumber + random_player + ComputerNumber + random_lottery+"<br>");
+        $("#lottery").html(PlayerNumber + random_player +"<br>"+ ComputerNumber + random_lottery+"<br>");
 
         for(var i=3; i<history_amout+2; i++){
           if(length-i<0){
@@ -408,7 +408,7 @@ infoContract.getPastEvents("Random",{filter:{from:userAccount},fromBlock:0,toBlo
           var random_player = event_last.returnValues.random_player;
           var random_lottery = event_last.returnValues.random_lottery;
           
-          $("#lottery").append(PlayerNumber + random_player + ComputerNumber + random_lottery+"<br>");
+          $("#lottery").append(PlayerNumber + random_player + "<br>"+ ComputerNumber + random_lottery+"<br>");
         }
       }
     }

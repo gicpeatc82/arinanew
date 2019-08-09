@@ -21,12 +21,12 @@ body {
 h1, h2, h3, h4, h5, h6, p {
     margin: 0px;
     padding: 0px;
-    line-height: 150%;
+    line-height: 110%;
     color: #fff;
     font-family: 'Montserrat', sans-serif,'Microsoft JhengHei';
 }
 p{
-    font-size:3.5vmin;
+    font-size:2.2vmin;
 }
 ul, ol {
     list-style: none;
@@ -111,6 +111,7 @@ header .row{
 }
  .navbar-brand {
     float: left;
+    max-width: 35%;
     padding: 1% 0 0 5%;
 }
 /*
@@ -251,25 +252,34 @@ header .row{
     padding-bottom:0;
 }
 #game .container{
-    
+    width:85%;
     max-width: 2050px;
 }
 .game-left{
-    margin-top: -5%;
+    position : relative;
+    margin-top: 0;
 }
 .game-right{
-    margin-top: -3.5%;
+    position : relative;
+    margin-top: -3%;
 }
-.game-left div{
-    margin-top:50px;
+.play-a-game, .win-and-get, .win-code{
+    margin-top:10%;
 }
 #game .col-sm-12{
     position: relative;
     height: 650px;
 }
+.play-a-game{
+    padding:0 10%;
+}
+.play-a-game h5{
+    
+    font-size: 1.7vw;
+}
 .cta{
-    width:30%;
-    padding:0 10px;
+    width:31%;
+    padding:0;
     border: none;
     background-color: #222;
 }
@@ -283,7 +293,8 @@ header .row{
 }
 
 .win-code p{
-    font-size:1.5vw;
+    font-size:1.1vw;
+    padding-top:5%;
 }
 .win-code div{
     background:rgba(131, 131, 131, 0.808); 
@@ -297,9 +308,12 @@ header .row{
     margin:0 auto;
 }
 .game-img img{
-    margin-top: 25%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    top:0;
+    margin-top: 0;
     width:auto;
-    z-index:1;
+    z-index:0;
 }
 
 
@@ -319,12 +333,12 @@ header .row{
 }
 .win-number p{
     display:inline-block;
-    font-size: 2em;
+    font-size: 4vw;
 }
 .play-history, .prize-history{
     margin-top:5%;
 }
-.play-history p, .prize-history p{
+.play-history div p, .prize-history div p{
     line-height: 150%;
 }
 .play-history div, .prize-history div{
@@ -379,7 +393,6 @@ header .row{
     z-index:2;
 }
 .model1 img{
-    width: 190%;
 }
 .model2 img{
     width: 100%;
@@ -490,7 +503,8 @@ header .row{
         height: 105%;
     }
     .game-img img{
-        height:50%;
+        height:80%;
+        left:70%;
     }
 }
 
@@ -499,7 +513,8 @@ header .row{
         height: 105%;
     }
     .game-img img{
-        height:60%;
+        height:80%;
+        left:70%;
     }
     .play-history p, .prize-history p {
         font-size: 1.4vw;
@@ -508,39 +523,40 @@ header .row{
 
 @media (min-width: 1020px) {
     #game{
-        height: 730px;
+        height: 570px;
     }
     .game-img img{
-        height:55%;
-        margin-left:-10%;
+        height:80%;
+        left:55%;
     }
     .play-history p, .prize-history p {
-        font-size: 1.35vw;
+        font-size: 1vw;
     }
 }
 
 @media (min-width: 1250px) {
     #game{
-        height: 820px;
+        height: 655px;
     }
     .game-img img{
-        height:57%;
+        height:90%;
+        left:55%;
     }
     .play-history p, .prize-history p {
-        font-size: 1.3vw;
+        font-size: 1vw;
     }
 }
 
 @media (min-width: 1900px) {
     #game{
-        height: 105%;
+        height: 870px;
     }
     .game-img img{
-        height:75%;
-        margin-left:-10%;
+        height:120%;
+        left:55%;
     }
     .play-history p, .prize-history p {
-        font-size: 1.25vw;
+        font-size: 0.9vw;
     }
-}
+
 }

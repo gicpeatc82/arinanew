@@ -346,15 +346,7 @@
 
 
 <script>
-    $(function(){
-        var width = $(this).width();
-        if(width<1150){
-            $(".navbar-brand01").hide();
-            $(".navbar-brand02").show();
 
-        }
-        
-    });
 </script>
 
 </body>
