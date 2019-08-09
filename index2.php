@@ -93,7 +93,7 @@
         <div class="row">
             <div id="header-left" class="col-sm-12 col-md-7">
                 <div class="video-container">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/W1S7vUCfaEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/W1S7vUCfaEc?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 
                 <img id="header-img" src="images/ARINAYAKYUKENLOGO.png" alt="">

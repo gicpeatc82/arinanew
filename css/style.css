@@ -276,6 +276,11 @@ header .row{
     cursor: pointer; 
     background-color: #222;
 }
+.cta img:hover{
+    background-color: #777;
+    border-radius: 10px;
+}
+
 .win-code p{
     font-size:1.5vw;
 }
@@ -399,7 +404,8 @@ header .row{
     z-index:4;
 }
 #dapp-listing{
-    max-width: 1440px;
+    max-width: 1240px;
+    width: 90%;
     margin-top: 13%;
     text-align: center;
     font-size: 2vw;
@@ -441,22 +447,26 @@ header .row{
     width: 32%;
 }
 .copyright{
+    position: absolute;
+    top: 60%;
 }
 .copyright p{
-    font-size:2.5vmin;
+    font-size:1vw;
     margin-bottom: 0;
 }
 
 #bottom .nav a{
     color: #fff;
+    font-size: 2vw;
 }
 #bottom .ARINAUNIVERSELOGO{
-    padding-left:3%;
-    padding-top:3%;
+    padding-top: 3%;
+    margin-left: 35%;
+}
 }
 
 #bottom .nav{
-    padding: 0 30%;
+    padding-left: 15%;
 }
 #bottom .nav a img{
     display:inline-block;
@@ -466,6 +476,7 @@ header .row{
 .icon{
     position: absolute;
     top: 40%;
+    left: 75%;
 }
 
 .icon li{
@@ -494,10 +505,10 @@ header .row{
 
 @media (min-width: 1020px) {
     #game{
-        height: 820px;
+        height: 730px;
     }
     .game-img img{
-        height:60%;
+        height:55%;
         margin-left:-10%;
     }
 }
