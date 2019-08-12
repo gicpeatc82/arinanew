@@ -112,13 +112,10 @@ header .row{
  .navbar-brand {
     float: left;
     max-width: 35%;
-    padding: 1% 0 0 1%;
+    padding: 1% 0 0 3%;
 }
-/*
-.navbar-brand img{
-    height:100%;
-    width:auto;
-} */
+
+
 .nav-link{
     padding-top:0;
     padding-bottom:0;
@@ -131,7 +128,7 @@ header .row{
     color:#fff;
     text-decoration:none;
 }
-.nav-item:hover{
+.nav-item-main:hover{
     border: 1px solid #fff;
     border-radius: 25px;
 }
@@ -140,12 +137,10 @@ header .row{
     position: absolute;
 }
 .social {
-    width:5%;
-    margin-top:1%;
+    width:6%;
 } 
 .facebook{
-    width:3.5%;
-    margin-top:1%;
+    width:4%;
 }
 
 .language{
@@ -156,11 +151,12 @@ header .row{
     background-color: #444;
     border: 0;
     border-radius: 25px;
-
+    font-weight: 600;
 }
 #language option{
     color: #fff;
     background-color: #444;
+    font-weight: 600;
 }
 
 #header .row{
@@ -175,7 +171,7 @@ header .row{
 
 .video-container {
     margin-left:22%;
-    width:90%;
+    width:87%;
     position: relative;
     padding-bottom: 50.25%;
     height: 0;
@@ -225,6 +221,7 @@ header .row{
 .game-left{
     position : relative;
     margin-top: 0;
+    z-index:3;
 }
 .game-right{
     position : relative;
@@ -256,7 +253,6 @@ header .row{
 }
 .cta img:hover{
     background-color: #777;
-    border-radius: 10px;
 }
 
 .win-code p{
@@ -359,16 +355,17 @@ header .row{
     width:105%;
     z-index:2;
 }
-.model1 img{
+/* .model1 img{
     width: 110%;
 }
 .model2 img{
     width: 100%;
-}
+} */
 
 /*====================05.footer============*/
+
 #footer{
-    margin-top:-40%;
+    margin-top:-32%;
     position:relative;
     height:100%
 }
@@ -498,14 +495,17 @@ header .row{
         padding-top:0;
         padding-bottom:0;
     }
+    .cta img:hover{
+        border-radius: 10px;
+    }
 }
 
 @media (min-width: 1020px) {
     #game{
-        height: 570px;
+        height: 630px;
     }
     .game-img img{
-        height:80%;
+        height:95%;
         left:55%;
     }
     .play-history p, .prize-history p {
@@ -514,15 +514,26 @@ header .row{
     .nav-link{
         padding-top:0;
         padding-bottom:0;
+    }
+    .cta img:hover{
+        border-radius: 10px;
+    }
+    .navbar-brand img {
+        height: 45px;
+        width: auto;
+    }
+    .model img{
+        height: 650px;
+        width: auto;
     }
 }
 
 @media (min-width: 1250px) {
     #game{
-        height: 655px;
+        height: 775px;
     }
     .game-img img{
-        height:90%;
+        height:110%;
         left:55%;
     }
     .play-history p, .prize-history p {
@@ -532,14 +543,25 @@ header .row{
         padding-top:0;
         padding-bottom:0;
     }
+    .cta img:hover{
+        border-radius: 15px;
+    }
+    .navbar-brand img {
+        height: 45px;
+        width: auto;
+    }
+    .model img{
+        height: 835px;
+        width: auto;
+    }
 }
 
 @media (min-width: 1900px) {
     #game{
-        height: 870px;
+        height: 920px;
     }
     .game-img img{
-        height:120%;
+        height:130%;
         left:55%;
     }
     .play-history p, .prize-history p {
@@ -548,5 +570,16 @@ header .row{
     .nav-link{
         padding-top:0;
         padding-bottom:0;
+    }
+    .cta img:hover{
+        border-radius: 20px;
+    }
+    .navbar-brand img {
+        height: 48px;
+        width: auto;
+    }
+    .model img{
+        height: 1200px;
+        width: auto;
     }
 }

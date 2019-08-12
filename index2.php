@@ -55,25 +55,25 @@
             
             <!-- Links -->
             <ul class="navbar-nav">
-                <li class="nav-item" id="nav-link" style="max-width:20%;">
+                <li class="nav-item nav-item-main" id="nav-link" style="max-width:20%;">
                     <span class="nav-link">
                         <a class="link-main" href="https://www.arinamillion.com/arinanew/" >HOME</a>
                     </span>
                 </li>
 
-                <li class="nav-item" style="max-width:37%;">
+                <li class="nav-item nav-item-main" style="max-width:37%;">
                     <span class="nav-link">
                         <a class="link-main" href="howtoplay.php" >HOW TO PLAY</a>
                     </span>
                 </li>
 
-                <li class="nav-item" style="max-width:20%;">
+                <li class="nav-item nav-item-main" style="max-width:20%;">
                     <span class="nav-link">
                         <a class="link-main" href="#lottery0" >TABLE</a>
                     </span>
                 </li>
 
-                <li class="nav-item" style="max-width:40%;">
+                <li class="nav-item nav-item-main" style="max-width:40%;">
                     <span class="nav-link">
                         <a class="link-main" href="https://etherscan.io/address/0xcCdA5213d453388fB5fB43054BC261c8636b1e51#code" >SMART CONTRACT</a>
                     </span>
@@ -118,6 +118,14 @@
             <div id="header-left" class="col-sm-12 col-md-7">
                 <div class="video-container">
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/W1S7vUCfaEc?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                        <!-- <iframe  src="https://drive.google.com/file/d/1alkC-DghxWSiKHE09j74NzV3P9MfeX6O/preview" width="720" height="480" autoplay=true></iframe>
+                     -->
+                        <!-- <video width="720" height="480" controls >  
+                            <source src="https://drive.google.com/file/d/1alkC-DghxWSiKHE09j74NzV3P9MfeX6O/preview" type="video/mp4">
+                            
+                        </video> -->
+                    
                 </div>
                 
                 <img id="header-img" src="images/ARINAYAKYUKENLOGO.png" alt="">
