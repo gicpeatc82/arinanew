@@ -44,7 +44,7 @@
 <!------header-------------------->
     <header id="header">
         <img src="images/BG.png" alt="">
-        <nav class="navbar navbar-expand-lg " id="navber">
+        <nav class="navbar navbar-expand-md " id="navber">
             <!-- Brand/logo -->
             <div class="navbar-brand navbar-brand01" >
                 <img src="images/ARINAUNIVERSELOGO.png" alt="logo">
@@ -56,29 +56,53 @@
             <!-- Links -->
             <ul class="navbar-nav">
                 <li class="nav-item" id="nav-link" style="max-width:20%;">
-                    <a class="nav-link link-main" href="https://www.arinamillion.com/arinanew/" >HOME</a>
+                    <span class="nav-link">
+                        <a class="link-main" href="https://www.arinamillion.com/arinanew/" >HOME</a>
+                    </span>
                 </li>
+
                 <li class="nav-item" style="max-width:37%;">
-                    <a class="nav-link link-main" href="howtoplay.php" >HOW TO PLAY</a>
+                    <span class="nav-link">
+                        <a class="link-main" href="howtoplay.php" >HOW TO PLAY</a>
+                    </span>
                 </li>
+
                 <li class="nav-item" style="max-width:20%;">
-                <a class="nav-link link-main" href="#lottery0" >TABLE</a>
+                    <span class="nav-link">
+                        <a class="link-main" href="#lottery0" >TABLE</a>
+                    </span>
                 </li>
+
                 <li class="nav-item" style="max-width:40%;">
-                <a class="nav-link link-main" href="https://etherscan.io/address/0xcCdA5213d453388fB5fB43054BC261c8636b1e51#code" >SMART CONTRACT</a>
+                    <span class="nav-link">
+                        <a class="link-main" href="https://etherscan.io/address/0xcCdA5213d453388fB5fB43054BC261c8636b1e51#code" >SMART CONTRACT</a>
+                    </span>
                 </li>
+
                 <li class="nav-item facebook">
-                <a class="nav-link" href="https://www.facebook.com/GlobalIdolCoin/"><img src="images/icon/Facebook.png" alt=""></a>
+                    <span class="nav-link">
+                        <a href="https://www.facebook.com/GlobalIdolCoin/"><img src="images/icon/Facebook.png" alt=""></a>
+                    </span>
                 </li>
+
                 <li class="nav-item social">
-                <a class="nav-link" href="https://twitter.com/GIC48226830"><img src="images/icon/Twitter.png" alt=""></a>
+                    <span class="nav-link">
+                        <a href="https://twitter.com/GIC48226830"><img src="images/icon/Twitter.png" alt=""></a>
+                    </span>
                 </li>
+
                 <li class="nav-item social">
-                <a class="nav-link" href="https://www.instagram.com/taiwan_gic/"><img src="images/icon/Instagram.png" alt=""></a>
+                    <span class="nav-link">
+                        <a href="https://www.instagram.com/taiwan_gic/"><img src="images/icon/Instagram.png" alt=""></a>
+                    </span>
                 </li>
+
                 <li class="nav-item social">
-                <a class="nav-link" href="https://www.youtube.com/channel/UCm5YE9imTe4LVGOJrSpoJ2g/featured?view_as=subscriber"><img src="images/icon/Youtube.png" alt=""></a>
+                    <span class="nav-link">
+                        <a href="https://www.youtube.com/channel/UCm5YE9imTe4LVGOJrSpoJ2g/featured?view_as=subscriber"><img src="images/icon/Youtube.png" alt=""></a>
+                    </span>
                 </li>
+
                 <li class="nav-item language">
                     <select id="language" class="selectpicker form-control form-control-sm" data-width="auto" data-style="btn-primary" name="language" onchange="changelang()">
                         <option value="en">ENG</option>

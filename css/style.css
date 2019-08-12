@@ -112,7 +112,7 @@ header .row{
  .navbar-brand {
     float: left;
     max-width: 35%;
-    padding: 1% 0 0 5%;
+    padding: 1% 0 0 1%;
 }
 /*
 .navbar-brand img{
@@ -120,11 +120,18 @@ header .row{
     width:auto;
 } */
 .nav-link{
-    color:#fff;
+    padding-top:0;
+    padding-bottom:0;
 }
-
-.link-main:hover{
+.nav-link a{
     color:#fff;
+    font-weight: 700;
+}
+.nav-link a:hover{
+    color:#fff;
+    text-decoration:none;
+}
+.nav-item:hover{
     border: 1px solid #fff;
     border-radius: 25px;
 }
@@ -140,47 +147,7 @@ header .row{
     width:3.5%;
     margin-top:1%;
 }
-/* .nav {
-    display:inline-block;
-    margin: 2% 0;
-}
 
-.nav span {
-    display: inline-block;
-}
-
-.nav span a {
-    color: #fff;
-    text-transform: capitalize;
-    display: inline-block;
-    font-size: 2vmin;
-    font-weight:bold;
-}
-.social {
-    width:10%;
-} */
-/* .social img{
-    width:55%;
-}
-.nav-social{
-    width:30%;
-} */
-
-/* #nav-link ul li{
-    display: inline-block;
-    margin: 0;
-}
-
-#nav-link ul li a{
-    color: #fff;
-    padding:0;
-    font-size: 2.5vmin;
-    text-decoration:none;
-}
-#nav-link ul li a:hover {
-    border: 1px solid #fff;
-    border-radius: 25px;
-} */
 .language{
     margin-top:1%;
 }
@@ -510,6 +477,10 @@ header .row{
         height:80%;
         left:70%;
     }
+    .nav-link{
+        padding-top:0;
+        padding-bottom:0;
+    }
 }
 
 @media (min-width: 992px) {
@@ -522,6 +493,10 @@ header .row{
     }
     .play-history p, .prize-history p {
         font-size: 1.4vw;
+    }
+    .nav-link{
+        padding-top:0;
+        padding-bottom:0;
     }
 }
 
@@ -536,6 +511,10 @@ header .row{
     .play-history p, .prize-history p {
         font-size: 1vw;
     }
+    .nav-link{
+        padding-top:0;
+        padding-bottom:0;
+    }
 }
 
 @media (min-width: 1250px) {
@@ -548,6 +527,10 @@ header .row{
     }
     .play-history p, .prize-history p {
         font-size: 1vw;
+    }
+    .nav-link{
+        padding-top:0;
+        padding-bottom:0;
     }
 }
 
@@ -562,5 +545,8 @@ header .row{
     .play-history p, .prize-history p {
         font-size: 0.9vw;
     }
-
+    .nav-link{
+        padding-top:0;
+        padding-bottom:0;
+    }
 }
