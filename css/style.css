@@ -345,22 +345,18 @@ header .row{
     position:relative;
 }
 .model img{
-    /* height: 85vh;
-    width: auto; */
-    z-index:-1;
-    margin-top:10px;
+    z-index: -1;
+    width: auto;
 }
 
 .list img{
     width:105%;
     z-index:2;
 }
-/* .model1 img{
-    width: 110%;
+.model1 img{
+    margin-top: 2%;
 }
-.model2 img{
-    width: 100%;
-} */
+
 
 /*====================05.footer============*/
 

@@ -241,7 +241,7 @@
                     <img src="images/WINNINGBET.png" alt="">
                 </div>
                 <div class="col-sm-3 col-md-3 model model2">
-                    <img src="images/ARINA04_2.png" alt="">
+                    <img src="images/ARINA04.png" alt="">
                 </div>
             </div>
         </div>
