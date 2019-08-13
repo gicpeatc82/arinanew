@@ -87,7 +87,7 @@
 
                 <li class="nav-item social">
                     <span class="nav-link">
-                        <a href="https://twitter.com/GIC48226830"><img src="images/icon/Twitter.png" alt=""></a>
+                        <a href="https://twitter.com/GIC48226830"><img style="padding-top:10%;" src="images/icon/Twitter.png" alt=""></a>
                     </span>
                 </li>
 
@@ -221,7 +221,7 @@
         <button id="paly-video" type="button" style="display:none" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
 
         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-lg" style="max-width: 80%;">
                 <div class="modal-content">
                     <div id="game-video">
                     
@@ -347,18 +347,18 @@
     // function get_random(){
     //     return Math.floor(Math.random()*3)+1
     // }
-    // var videoPaperDraw = [
-    //   '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ehnejXfQezw?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-    //   '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/J4580IxL3iI?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-    //   '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Eb8RRCLLK3s?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-    // ]
-    // $(function(){
-    //     let index = get_random()
-    //     console.log(index);
-    //     $("#game-video").empty().append(videoPaperDraw[index]);
+    var videoPaperDraw = [
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ehnejXfQezw?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/J4580IxL3iI?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Eb8RRCLLK3s?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    ]
+    $(function(){
+        let index = get_random()
+        console.log(index);
+        $("#game-video").empty().append(videoPaperDraw[index]);
 
-    //     $("#paly-video").click();
-    // });
+        $("#paly-video").click();
+    });
 </script>
 
 <script type='text/javascript' src='js/jquery.min.js'></script>
