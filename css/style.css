@@ -329,8 +329,18 @@ header .row{
 }
 #game-video {
     background-color: #222;
-}
+    position: relative;
+    padding-bottom: 50.25%;
+    height: 0;
+    overflow: hidden;
 
+}
+#game-video iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /*====================04.list============*/
 #list{

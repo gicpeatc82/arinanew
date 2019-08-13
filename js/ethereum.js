@@ -177,50 +177,50 @@ web3.eth.getAccounts(function(error, result) {
     alert(win(record));
 
     var videoPaperDraw = [
-      '<iframe src="https://drive.google.com/file/d/1alkC-DghxWSiKHE09j74NzV3P9MfeX6O/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1YJ5jjNHHP0uBmRlm1hqdG-iqf6CkwgAK/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1yAfv-YglzzeVF21-4lKnbEGePP0regkp/preview" width="720" height="480"></iframe>'
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ehnejXfQezw?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/J4580IxL3iI?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Eb8RRCLLK3s?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     ]
     var vedeoPaperLose = [
-      '<iframe src="https://drive.google.com/file/d/1jovonEVePWNAfiE86Y2Bin2SQsZoiq7M/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1MqYb9mgZ_mtAExHEqdNNGO__4ZUtu9Jc/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1uBqWYJtvASlIc3TlL2gM-VTfdYesYGo7/preview" width="720" height="480"></iframe>'
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/i7fHRwz1k_0?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/CI2hG9gSnuc?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/h3If7Xipimc?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     ]
     var vedeoPaperWin = [
-      '<iframe src="https://drive.google.com/file/d/1mATozzZ1OvXXRWN_9HMLxzK8idD_TP3l/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1SfcqUYvm11lydVVQYyAL4WdKUX4peJff/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1B4UNRR4JiYukufBg7s0QuDlwMKjvGu95/preview" width="720" height="480"></iframe>'
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/P1xblfOR19g?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/TKFtmnapPXA?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/kw8QgoqZXoU?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     ]
     var videoScissorDraw = [
-      '<iframe src="https://drive.google.com/file/d/1puutugmBTxSbE9PFoc2r0mRg7eztLqpF/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1dHP7DiaAhmB35f0Pk5H2MIpo4aYodx3k/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1ZHtqpQd-1wg664RfvJHTEIcb3ayNjkRw/preview" width="720" height="480"></iframe>'
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZFJAhc_n8P0?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ctpe5IMSQIU?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/EwZNppihkCE?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     ]
     var videoScissorLose = [
-      '<iframe src="https://drive.google.com/file/d/1FJB_QJHA_W2UvX_LNdqQTxVBhElG2uJ3/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1ufuInEBKlDwXeaY12_IkpCA3q1Bk9xtW/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1dnbrx0CDuorILllTI5pVfPKe4lqJGKvQ/preview" width="720" height="480"></iframe>'
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/WTOt3BjrDq8?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/wcyuf5o2Anw?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/6gNDMTSCqz4?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     ]
     var videoScissorWin = [
-      '<iframe src="https://drive.google.com/file/d/1h7xK0LbJVIQ2Hadj1JJZkLfu8Vk1vKxW/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1MhpbCWXE08ru4cEnwt9HIsEIGBUOGI28/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1PmlAjP0CWj5HWqag_c51GrRejtJNbHHu/preview" width="720" height="480"></iframe>'
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/QiltyrXuObA?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/HvbVTwX5Cqs?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/yZLEs19S-7Y?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     ]
 
     var videoStoneDraw = [
-      '<iframe src="https://drive.google.com/file/d/1HQTzkYLdR20GaEltktZp-L9ax2vlqoeV/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/11iIMx5K3MvLijC-nEZdlHe__ZpWnyfp_/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1Sdmp_K8Xs6cQfblggXpP__26REuVDmGC/preview" width="720" height="480"></iframe>'
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/KpaUIs5cQEo?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/x4XM81N5JyQ?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/-TwIZF1GVJk?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     ]
     var videoStoneLose = [
-      '<iframe src="https://drive.google.com/file/d/1GWzIb9i0eyLi-KJrZds9qT73iJTZepEb/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1CJm2yxUKDAt8Ze6jtt_z75qDMAXK8Ydh/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/13XFR8HQk89RU-KxH2dXNCGsr4AAuPPGR/preview" width="720" height="480"></iframe>'
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cbGmxuy5gEA?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/-hkg288Bf3M?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Bzwly4OyENc?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     ]
     var videoStoneWin = [
-      '<iframe src="https://drive.google.com/file/d/1-X9kdtncJf7BWgCtNLCr3TNnwxNsFn9Y/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1UxC2zZnNhjBDAvd1GWoLleyvvPAtK-mO/preview" width="720" height="480"></iframe>',
-      '<iframe src="https://drive.google.com/file/d/1WExySw_LArjj6Mv9caxqRFWUdl3kEaZ-/preview" width="720" height="480"></iframe>'
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/h6EHlmQKQig?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/qmDt0fmkN9Q?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZZbkGnndkTM?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     ]
     // 0 => 布   1 => 剪刀   2 => 石頭
     // 0 => 輸   1 => 平手   2 => 贏
