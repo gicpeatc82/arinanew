@@ -19,21 +19,21 @@ if (typeof web3 !== 'undefined') {
  web3 = new Web3(new Web3.providers.HttpProvider(web));
 }
 
-/**** test***********/
+/**** test*
 var address = '0xbc82a950d16a2077a363f6fcc5f1764bd6ddeff0'
 
 var infoContract = new web3.eth.Contract(abi, address);
 
 var ArinaContract = new web3.eth.Contract(abi_erc20,'0x0bd0c2036fd2b00af041b3e20850c40923c56895');
+**********/
 
-
-/**** *producion
+/**** *producion***********/
 var address = '0xcCdA5213d453388fB5fB43054BC261c8636b1e51'
 
 var infoContract = new web3.eth.Contract(abi, address);
 
 var ArinaContract = new web3.eth.Contract(abi_erc20,'0xE6987CD613Dfda0995A95b3E6acBAbECecd41376');
-***********/
+
 
 
 var userAccount;

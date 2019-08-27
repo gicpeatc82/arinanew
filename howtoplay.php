@@ -664,7 +664,7 @@ $(function(){
 
                         <ul>
 
-
+                            <li><a href="https://www.arinamillion.com/arinanew/" class="button">Home</a></li>
 
 							<li><a href="howtoplay.php" class="button">How ot play</a></li>
 
@@ -672,7 +672,7 @@ $(function(){
 
 							<li><a href="https://etherscan.io/address/0xcCdA5213d453388fB5fB43054BC261c8636b1e51#code" class="button">Smart Contract</a></li>
 
-							<li><a href="https://www.arinamillion.com/arina_universe.php" class="button">Others</a></li>
+							
 
 
 
